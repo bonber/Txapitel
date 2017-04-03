@@ -1,9 +1,6 @@
 package info.bonber.txapitel.txapitel;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -95,7 +92,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void cargarComida(){
-        String url="https://txapitel.herokuapp.com";
+        String url="https://txapitel.herokuapp.com/";
         WebView view = (WebView) this.findViewById(R.id.webComida);
         view.loadDataWithBaseURL(null, "Cargando el contenido...", "text/html", "UTF-8", null);
         view.getSettings().setJavaScriptEnabled(true);
